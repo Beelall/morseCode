@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+	<html lang="en">
+	    <head>
+			<meta charset="utf-8">
+		</head>
+			<body background="image1.jpg">
+		
+				<SCRIPT LANGUAGE="JAVASCRIPT">
+
+					var charCodes=new Array(41); 
+						
+						charCodes["a"]=". _";
+						charCodes["b"]="_ . . .";
+						charCodes["c"]="_ . _ .";
+						charCodes["d"]="_ . .";
+						charCodes["e"]=".";
+						charCodes["f"]=". . _ .";
+						charCodes["g"]="_ _ .";
+						charCodes["h"]=". . . .";
+						charCodes["i"]=". .";
+						charCodes["j"]=". _ _ _";
+						charCodes["k"]="_ . _";
+						charCodes["l"]=". _ . .";
+						charCodes["m"]="_ _";
+						charCodes["n"]="_ .";
+						charCodes["o"]="_ _ _";
+						charCodes["p"]=". _ _ .";
+						charCodes["q"]="_ _ . _";
+						charCodes["r"]=". _ .";
+						charCodes["s"]=". . .";
+						charCodes["t"]="_";
+						charCodes["u"]=". . _";
+						charCodes["v"]=". . . _";
+						charCodes["w"]=". _ _";
+						charCodes["x"]="_ . . _";
+						charCodes["y"]="_ . _ _";
+						charCodes["z"]="_ _ . .";
+						
+						
+						charCodes["1"]=". _ _ _ _";
+						charCodes["2"]=". . _ _ _";
+						charCodes["3"]=". . . _ _";
+						charCodes["4"]=". . . . _";
+						charCodes["5"]=". . . . .";
+						charCodes["6"]="_ . . . .";
+						charCodes["7"]="_ _ . . .";
+						charCodes["8"]="_ _ _ . .";
+						charCodes["9"]="_ _ _ _ .";
+						charCodes["0"]="_ _ _ _ _";
+						
+						
+						charCodes[","]="_ _ . . _ _";
+						charCodes["?"]=". . _ _ . .";
+						charCodes["'"]=" . _ _ _ _ . ";
+						charCodes["!"]="− · − · − − ";
+						charCodes["/"]="− · · − · ";
+						
+					var temp=''
+
+				function encode() {
+				document.morsecode.chars.value=document.morsecode.chars.value.toLowerCase();
+				document.morsecode.codebox.value="";
+				temp=''
+				var chars=document.morsecode.chars.value.split("");
+
+						for (a=0; a<chars.length; a++) {
+						if (chars[a]!=" ") {
+						if (window.charCodes[chars[a]]) {
+						document.morsecode.codebox.value+=charCodes[chars[a]]+"    ";
+						temp+=chars[a]+"="+charCodes[chars[a]]+"\n";
+						}
+						else
+						temp+=chars[a]+"=(None)\n";
+						}
+						else temp+="\n";
+						}
+						document.morsecode.codebox.value+="\n\n\nEXPLANATION:\n\n"+temp
+						}
+
+
+				</SCRIPT>
+
+			<FORM NAME="morsecode" style="color:#8080ff;">
+			 Type in a word or phrase:<INPUT id = "txtbox" TYPE="TEXT" NAME="chars" size="30" value=""> 
+									  <INPUT TYPE="BUTTON" VALUE="Encode" onClick="encode()"><BR><BR>
+			<TEXTAREA NAME="codebox" cols="60" rows="15" style="width:100%" wrap="virtual"> </TEXTAREA><br />
+			<INPUT TYPE="BUTTON" VALUE="Copy To Clipboard" onClick="document.morsecode.codebox.select(); document.execCommand('Copy');">
+			</FORM>
+			
+			
+			
+			<script>
+			
+						var a = document.getElementById('txtbox');
+						
+		                
+		
+					function play(){
+
+						if(a.value == "a"){
+						 var audio_a = document.getElementById('a_audio');
+						   audio_a.play();
+						   
+						}
+						else if (a.value == "b"){
+							var audio_b = document.getElementById('b_audio');
+							audio_b.play();
+						}
+						else if (a.value == "c"){
+							var audio_c = document.getElementById('c_audio');
+							audio_c.play();
+						}
+						else if (a.value == "d"){
+							var audio_d = document.getElementById('d_audio');
+							audio_d.play();
+						}
+						else if (a.value == "e"){
+							var audio_e = document.getElementById('e_audio');
+							audio_e.play();
+						}
+						else if (a.value == "f"){
+							var audio_f = document.getElementById('f_audio');
+							audio_f.play();
+						}
+						else if (a.value == "g"){
+							var audio_g = document.getElementById('g_audio');
+							audio_g.play();
+						}
+						else if (a.value == "h"){
+							var audio_h = document.getElementById('h_audio');
+							audio_h.play();
+						}
+						else if (a.value == "i"){
+							var audio_i = document.getElementById('i_audio');
+							audio_i.play();
+						}
+						else if (a.value == "j"){
+							var audio_j = document.getElementById('j_audio');
+							audio_j.play();
+						}
+						else if (a.value == "k"){
+							var audio_k = document.getElementById('k_audio');
+							audio_k.play();
+						}
+						else if (a.value == "l"){
+							var audio_l = document.getElementById('l_audio');
+							audio_l.play();
+						}
+						else if (a.value == "m"){
+							var audio_m = document.getElementById('m_audio');
+							audio_m.play();
+						}
+						else if (a.value == "n"){
+							var audio_n = document.getElementById('n_audio');
+							audio_n.play();
+						}
+						else if (a.value == "o"){
+							var audio_o = document.getElementById('o_audio');
+							audio_o.play();
+						}
+						else if (a.value == "p"){
+							var audio_p = document.getElementById('p_audio');
+							audio_p.play();
+						}
+						else if (a.value == "q"){
+							var audio_q = document.getElementById('q_audio');
+							audio_q.play();
+						}
+						else if (a.value == "r"){
+							var audio_r = document.getElementById('r_audio');
+							audio_r.play();
+						}
+						else if (a.value == "s"){
+							var audio_s = document.getElementById('s_audio');
+							audio_s.play();
+						}
+						else if (a.value == "t"){
+							var audio_t = document.getElementById('t_audio');
+							audio_t.play();
+						}
+						else if (a.value == "u"){
+							var audio_u = document.getElementById('u_audio');
+							audio_u.play();
+						}
+						else if (a.value == "v"){
+							var audio_v = document.getElementById('v_audio');
+							audio_v.play();
+						}
+						else if (a.value == "w"){
+							var audio_w = document.getElementById('w_audio');
+							audio_w.play();
+						}
+						else if (a.value == "x"){
+							var audio_x = document.getElementById('x_audio');
+							audio_x.play();
+						}
+						else if (a.value == "y"){
+							var audio_y = document.getElementById('y_audio');
+							audio_y.play();
+						}
+						else if (a.value == "z"){
+							var audio_z= document.getElementById('z_audio');
+							audio_z.play();
+						}
+
+						
+					}
+					
+				
+			
+				</script>
+			
+					
+				 <INPUT TYPE="BUTTON" VALUE="play" onClick="play()"><BR><BR>
+                 <audio id="a_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\A_morse_code.ogg" ></audio>
+                 <audio id="b_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\B_morse_code.ogg" ></audio>
+				 <audio id="c_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\C_morse_code.ogg" ></audio>
+				 <audio id="d_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\D_morse_code.ogg" ></audio>
+				 <audio id="e_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\E_morse_code.ogg" ></audio>
+				 <audio id="f_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\F_morse_code.ogg" ></audio>
+				 <audio id="g_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\G_morse_code.ogg" ></audio>
+				 <audio id="h_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\H_morse_code.ogg" ></audio>
+				 <audio id="i_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\I_morse_code.ogg" ></audio>
+				 <audio id="j_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\J_morse_code.ogg" ></audio>
+			     <audio id="k_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\K_morse_code.ogg" ></audio>
+			     <audio id="l_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\L_morse_code.ogg" ></audio>
+				 <audio id="m_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\M_morse_code.ogg" ></audio>
+				 <audio id="n_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\N_morse_code.ogg" ></audio>
+				 <audio id="o_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\O_morse_code.ogg" ></audio>
+				 <audio id="p_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\P_morse_code.ogg" ></audio>
+			     <audio id="q_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\Q_morse_code.ogg" ></audio>
+				 <audio id="r_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\R_morse_code.ogg" ></audio> 
+				 <audio id="s_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\S_morse_code.ogg" ></audio>
+				 <audio id="t_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\T_morse_code.ogg" ></audio>
+				 <audio id="u_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\U_morse_code.ogg" ></audio>
+				 <audio id="v_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\V_morse_code.ogg" ></audio>
+				 <audio id="w_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\W_morse_code.ogg" ></audio>
+				 <audio id="x_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\X_morse_code.ogg" ></audio>
+				 <audio id="y_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\Y_morse_code.ogg" ></audio>
+				 <audio id="z_audio" src="C:\Users\mhedoo\Desktop\site proxi\Morse\audio\Z_morse_code.ogg" ></audio>
+							 
+					 
+
+			</body>
+	</html> 
