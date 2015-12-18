@@ -8,7 +8,7 @@ this.alphabetInput = null;
 	
 	}
 	this.playMorsecCode = function playMorsecCode (){
-	
+
 	}
 	
 	
